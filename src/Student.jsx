@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
-function Student(props) {
+
+function Student({ name = "Guest", age = 0, isStudent = false }) {
   return (
     <div className="student">
-      <p>Name: {props.name}</p>
-      <p>Age: {props.age}</p>
-      <p>Handsome: {props.isStudent ? "Yes" : "No"}</p>
+      <p>Name: {name}</p>
+      <p>Age: {age}</p>
+      <p>Handsome: {isStudent ? "Yes" : "No"}</p>
     </div>
   );
 }
@@ -15,9 +16,4 @@ Student.propTypes = {
   isStudent: PropTypes.bool,
 };
 
-Student.defaultProps = {
-  name: "Guest",
-  age: 0,
-  isStudent: false,
-}
 export default Student;
