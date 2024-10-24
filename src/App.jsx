@@ -6,6 +6,9 @@ import Button from "./Button/Button";
 import Student from "./Student";
 import UserGreeting from "./UserGreeting";
 import List from "./List";
+import MyComponent from "./MyComponent";
+import Counter from "./Counter";
+import ColorPicker from "./ColorPicker";
 function App() {
   const fruits = [
     { id: 1, name: "apple", calories: 51 },
@@ -40,7 +43,9 @@ function App() {
       {vegatables.length > 0 && (
         <List items={vegatables} category="Vegatables" />
       )}
-
+      <MyComponent />
+      <Counter />
+      <ColorPicker />
       <Footer />
     </>
   );
