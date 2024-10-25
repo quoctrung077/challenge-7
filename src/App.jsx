@@ -9,6 +9,7 @@ import List from "./List";
 import MyComponent from "./MyComponent";
 import Counter from "./Counter";
 import ColorPicker from "./ColorPicker";
+import ToDoList from "./ToDoList";
 function App() {
   const fruits = [
     { id: 1, name: "apple", calories: 51 },
@@ -46,6 +47,7 @@ function App() {
       <MyComponent />
       <Counter />
       <ColorPicker />
+      <ToDoList />
       <Footer />
     </>
   );
